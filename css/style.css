@@ -7,40 +7,75 @@ body {
 }
 
 .header {
-  font-size: 30px;
   list-style-type: none;
   position: fixed;
   top : 0;
   left: 0;
   z-index: 999;
   width: 100%;
-  min-width: 1400px;
   height: 80px;
   box-shadow: 0px 2px 2px black;
   background-color: black;
   opacity: 0.8;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.header > div {
-
 }
 
 .header a {
   text-decoration: none;
-  font-size: 30px;
+  font-size: 25px;
   color: white;
   opacity: 0.8;
 }
 
-.header > .intro, .show, .news, .folow_us {
-  padding: 10px;
+.header > .intro, .download {
+  width: 15%;
+  height: 80px;
+  top: 0;
+}
+
+.header > .intro {
+  left: 150px;
+}
+
+.header > .download {
+  left: 450px;
+}
+
+.header > .news, .folow_us {
+  width: 15%;
+  height: 80px;
+  top: 0;
+}
+
+.header > .news {
+  right: 450px;
+}
+
+.header > .folow_us {
+  right: 150px;
+}
+
+.header > .intro, .download, .news, .folow_us {
+  display: flex;
+  float: left;
+  align-items: center;
+  position: absolute;
+  justify-content: center;
 }
 
 #logo_genshin{
   width: 200px;
+  float: left;
+}
+
+.header > .logo {
+  position: absolute;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  width: 20%;
+  top: 0;
+  height: 80px;
+  left: 40%;
 }
 
 #live_background
