@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  background-size: contain;
+  font-style: roboto;
+}
+
+.header {
+  color: white;
+  font-size: 30px;
+  list-style-type: none;
+  position: fixed;
+  top : 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  min-width: 1400px;
+  height: 80px;
+  box-shadow: 0px 2px 2px black;
+  background-color: black;
+  opacity: 0.8;
+}
+
+.left_content {
+ display: flex;
+ width: auto;
+ margin-left: 400px;
+}
+
+.left_content a{
+  text-decoration: none;
+  text-align: center;
+}
+
+.mid_content {
+  display: flex;
+  text-align: center;
+}
+
+#logo_genshin{
+  width: 100px;
+}
+
+.right_content {
+  display: flex;
+  margin-right: 40px;
+}
+
+.right_content a{
+  text-decoration: none;
+  text-align: center;
+}
+
+#live_background
+{
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
