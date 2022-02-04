@@ -106,7 +106,7 @@ body {
   background-size: contain;
   transform: translate(0, -300px);
 }
-
+/*
 #in {
   position: absolute;
   width: 48px;
@@ -115,8 +115,7 @@ body {
   top: 14px;
   border-radius: 50%;
 }
-
-/*
+*/
 #out {
   position: absolute;
   width: auto;
