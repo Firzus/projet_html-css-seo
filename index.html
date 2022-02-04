@@ -5,22 +5,24 @@
     <title>Genshin Impact - miHoYo</title>
     <meta name="Plongez au coeur de l'histoire" content="Genshin Impact est le premier jeu Action-RPG en monde ouvert développé par miHoYo. L'aventure se déroule en Teyvat, un continent béni par sept dieux ...">
     <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <!--Import css-->
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
-    <div class="home_page">
+    <div id="home_page">
       <div class="audio">
         <audio loop autoplay src="audio/theme.mp3"> Your browser does not support the <code>audio</code> element.</audio>
       </div>
       <div class="header" id="decoration_none">
-        <div class="intro"><a href="#">Présentation</a></div>
-        <div class="download"><a href="#">Télécharger</a></div>
-        <div class="logo"><a href="#"><img src="image/logo_genshin.png" id="logo_genshin"></a></div>
-        <div class="news"><a href="#">Actualités</a></div>
-        <div class="folow_us"><a href="#">Nous suivre</a></div>
+        <div class="intro"><a href="#presentation">Présentation</a></div>
+        <div class="download"><a href="#telecharger">Télécharger</a></div>
+        <div class="logo"><a href="#home_page"><img src="image/logo_genshin.png" id="logo_genshin"></a></div>
+        <div class="news"><a href="#actualite">Actualités</a></div>
+        <div class="folow_us"><a href="#nous_suivre">Nous suivre</a></div>
       </div>
       <div class="background">
         <video autoplay loop muted id="live_background">
@@ -29,12 +31,36 @@
       </div>
       <div class="content">
         <div class="button">
-          <a href="#">
-            <img class="in" src="image/entry_in.jpg" id="in">
-            <img class="out" src="image/entry_out.png" id="out">
-          </a>
+          <div id="in_hidden"><img src="image/entry_in.jpg" id="in"></div>
+          <div id="out_hidden"><img src="image/entry_out.png" id="out"></div>
         </div>
       </div>
     </div>
+    <div class="presentation" id="presentation">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="image/first_carousel.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="image/second_carousel.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="image/third_carousel.jpeg" style="width:100%">
+        </div>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+      <div class="description">
+        <h1>Découvrez l'univers de Genshin Impact !</h1>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
