@@ -3,6 +3,7 @@ body {
   padding: 0;
   background-color: black;
   font-family: 'Roboto', sans-serif;
+  color: white;
 }
 
 .header {
@@ -156,7 +157,6 @@ img {vertical-align: middle;}
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: white;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -189,7 +189,6 @@ img {vertical-align: middle;}
 
 
 .title_presentation > div {
-  color: white;
   opacity: 0.8;
   font-size: 40px;
   text-align: center;
@@ -229,7 +228,6 @@ img {vertical-align: middle;}
 }
 
 .title_news > div {
-  color: white;
   opacity: 0.8;
   font-size: 40px;
   text-align: center;
@@ -256,12 +254,11 @@ img {vertical-align: middle;}
   position: absolute;
   width: 100%;
   height: 75px;
-  bottom: 20vh;
+  bottom: 20%;
   left: 0;
 }
 
 .title_telecharger > div {
-  color: white;
   opacity: 0.8;
   font-size: 50px;
   text-align: center;
@@ -278,11 +275,40 @@ img {vertical-align: middle;}
 }
 
 .footer {
-  background-color: #000000;
+  background-color: #111111;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  align-items: center;
+  width: 100%;
+  height: 15%;
+}
+
+.content_footer {
+  display: flex;
+  width: 80%;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.links_text {
   display: flex;
   align-items: center;
-  position: relative;
-  width: 100%;
-  height: 25vh;
-  max-height: 270px;
+  width: 50%;
+  height: 100%;
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  left: 20%;
+  height: 100%;
+}
+
+.links {
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
 }
