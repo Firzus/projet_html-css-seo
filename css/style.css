@@ -291,19 +291,42 @@ img {vertical-align: middle;}
   justify-content: space-between;
 }
 
-.links_text {
-  display: flex;
-  align-items: center;
-  width: 50%;
-  height: 100%;
-}
-
 .logos {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 50%;
-  left: 20%;
+  height: 100%;
+}
+
+.logos > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  height: 100%;
+}
+
+.first_part {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: auto;
+}
+
+.second_part {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: auto;
+}
+
+.links_text {
+  display: flex;
+  align-items: center;
+  width: 50%;
   height: 100%;
 }
 
