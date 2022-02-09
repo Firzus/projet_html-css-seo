@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: black;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Signika Negative', sans-serif;
   color: white;
 }
 
@@ -299,31 +299,28 @@ img {vertical-align: middle;}
   height: 100%;
 }
 
-.logos > div {
+.first_part {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 50%;
+  width: 30%;
   height: 100%;
-}
-
-.first_part {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 80%;
-  height: auto;
+  left: 10%
 }
 
 .second_part {
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 80%;
-  height: auto;
+  justify-content: space-between;
+  width: 30%;
+  height: 100%;
+  right: 10%
 }
 
 .links_text {
+  margin: 10px;
   display: flex;
   align-items: center;
   width: 50%;
@@ -331,7 +328,64 @@ img {vertical-align: middle;}
 }
 
 .links {
+  line-height: 1.5;
+  width: 40%;
+  height: 100%;
+}
+
+.links > a {
+  display: block;
   list-style-type: none;
   text-decoration: none;
-  color: white;
+  text-align: start;
+  font-size: 20px;
+}
+
+.text {
+  line-height: 1.5;
+  width: 60%;
+  height: 100%;
+}
+
+.text > div {
+  display: block;
+  list-style-type: none;
+  text-decoration: none;
+  text-align: start;
+  font-size: 16px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 0px;
+  z-index: 999;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/*
+Rollover Image
+*/
+
+.figure {
+  right: 0px;
+  width: 5%; /* can be omitted for a regular non-lazy image */
+  max-width: 100%;
+}
+
+.figure img.image-hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity .2s;
+}
+.figure:hover img.image-hover {
+  opacity: 1;
 }
