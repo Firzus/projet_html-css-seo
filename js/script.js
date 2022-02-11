@@ -1,12 +1,15 @@
-// bouton show video
+// Bouton show video
 
-document.getElementById("out")
-        .addEventListener("click", function() {
-  document.getElementById("out_hidden").hidden = true;
-  document.getElementById("in_hidden").hidden = false;
-}, false);
+function myFunction() {
+  var x = document.getElementById('iframe_video');
+  if (x.style.visibility === 'visible') {
+    x.style.visibility = 'hidden';
+  } else {
+    x.style.visibility = 'visible';
+  }
+}
 
-// slideshow
+// Slideshow
 
 var slideIndex = [1,1];
 var slideId = ["mySlides1", "mySlides2"]
@@ -28,7 +31,7 @@ function showSlides(n, no) {
   x[slideIndex[no]-1].style.display = "block";
 }
 
-//Get the button
+// Get the button
 var mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button

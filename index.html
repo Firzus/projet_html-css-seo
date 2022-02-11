@@ -25,10 +25,19 @@
           <source src="video/background.mp4" type="video/mp4">
         </video>
       </div>
-      <div class="content">
-        <div class="button">
-          <div id="in_hidden"><img src="image/entry_in.jpg" id="in"></div>
-          <div id="out_hidden"><img src="image/entry_out.png" id="out"></div>
+      <div class="iframe_video" id="iframe_video">
+        <iframe
+          width="840" height="473"
+          src="https://www.youtube.com/embed/SO__VQZirJ4"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="content" id="button" type="button">
+        <div class="button" onclick="myFunction()">
+          <img id="button_home_page" src="image/entry_in.jpg" onmouseover="this.src='image/entry_out.png'" onmouseout="this.src='image/entry_in.jpg'">
         </div>
       </div>
     </div>
@@ -126,10 +135,9 @@
       </div>
     </div>
     <div class="figure" onclick="topFunction()" id="myBtn" title="Go to top">
-      <img class="Sirv image-main"
-           src="image/sticker_in_color.png"
+      <img class="Sirv image-main_gototop"
            data-src="image/sticker_in.png">
-      <img class="Sirv image-hover"
+      <img class="Sirv image-hover_gototop"
            data-src="image/sticker_out.png">
     </div>
     <script type="text/javascript" src="js/script.js"></script>
