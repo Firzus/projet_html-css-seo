@@ -2,11 +2,24 @@
 
 function myFunction() {
   var x = document.getElementById('iframe_video');
+  var m = document.getElementById('audio');
+
   if (x.style.visibility === 'visible') {
     x.style.visibility = 'hidden';
-  } else {
+    }
+  else {
     x.style.visibility = 'visible';
   }
+}
+
+// Side Nav
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
 }
 
 // Slideshow
@@ -49,4 +62,18 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
+}
+
+// Open / CLose : side_bar
+
+function changeImage() {
+
+  if (document.getElementById("imgClickAndChange").src == "http://www.userinterfaceicons.com/80x80/minimize.png")
+    {
+      document.getElementById("imgClickAndChange").src = "http://www.userinterfaceicons.com/80x80/maximize.png";
+    }
+  else
+    {
+      document.getElementById("imgClickAndChange").src = "http://www.userinterfaceicons.com/80x80/minimize.png";
+    }
 }

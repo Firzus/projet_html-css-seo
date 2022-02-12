@@ -78,6 +78,51 @@ body {
   left: 40%;
 }
 
+.social {
+  position: fixed;
+  z-index: 999;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  transition: all 0.5s ease-out;
+  opacity: 0.8;
+  background: white;
+}
+
+.social > p {
+  font-size: 18px;
+  color: #121212;
+  margin: 18px auto;
+  text-align: center;
+}
+
+.social_list {
+  position: relative;
+  width: 178px;
+  padding: 10px 2px;
+}
+
+.social_item {
+  width: 100%;
+  font-size: 16px;
+  list-style-type: none;
+}
+
+.social_item a {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 44px;
+  color: black;
+  padding: 0 21px;
+}
+
+.social_item a span {
+  font-size: 30px;
+}
+
 #live_background
 {
   position: relative;
@@ -341,6 +386,8 @@ img {vertical-align: middle;}
   text-decoration: none;
   text-align: start;
   font-size: 20px;
+  color: white;
+  opacity: 0.8;
 }
 
 .text {
@@ -355,6 +402,8 @@ img {vertical-align: middle;}
   text-decoration: none;
   text-align: start;
   font-size: 16px;
+  color: white;
+  opacity: 0.8;
 }
 
 #myBtn {

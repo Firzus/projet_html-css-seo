@@ -11,7 +11,7 @@
   <body>
     <div id="home_page">
       <div class="audio">
-        <audio loop autoplay src="audio/theme.mp3"> Your browser does not support the <code>audio</code> element.</audio>
+        <audio id="audio" loop autoplay src="audio/theme.mp3"> Your browser does not support the <code>audio</code> element.</audio>
       </div>
       <div class="header" id="decoration_none">
         <div class="intro"><a href="#presentation">Présentation</a></div>
@@ -19,6 +19,59 @@
         <div class="logo"><a href="#home_page"><img src="image/logo_genshin.png" id="logo_genshin"></a></div>
         <div class="download"><a href="#telecharger">Télécharger</a></div>
         <div class="folow_us"><a href="#nous_suivre">Nous suivre</a></div>
+      </div>
+      <div class="social" id="nous_suivre">
+        <p>Nous suivre</p>
+        <ul class="social_list">
+          <li class="social_item">
+            <a target="_blank" href="https://www.facebook.com/Genshinimpact.fr/">
+              <span class="icon_facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </span>
+              Facebook
+            </a>
+          </li>
+          <li class="social_item">
+            <a target="_blank" href="https://twitter.com/genshinimpactfr">
+              <span class="icon_twitter">
+                <i class="fa-brands fa-twitter"></i>
+              </span>
+              Twitter
+            </a>
+          </li>
+          <li class="social_item">
+            <a target="_blank" href="https://www.youtube.com/c/GenshinImpact">
+              <span class="icon_youtube">
+                <i class="fa-brands fa-youtube"></i>
+              </span>
+              Youtube
+            </a>
+          </li>
+          <li class="social_item">
+            <a target="_blank" href="https://www.instagram.com/genshinimpact/">
+              <span class="icon_instagram">
+                <i class="fa-brands fa-instagram-square"></i>
+              </span>
+              Instagram
+            </a>
+          </li>
+          <li class="social_item">
+            <a target="_blank" href="https://www.reddit.com/r/Genshin_Impact">
+              <span class="icon_reddit">
+                <i class="fa-brands fa-reddit-alien"></i>
+              </span>
+              Reddit
+            </a>
+          </li>
+          <li class="social_item">
+            <a target="_blank" href="https://discord.com/invite/genshinimpact">
+              <span class="icon_discord">
+                <i class="fa-brands fa-discord"></i>
+              </span>
+              Discord
+            </a>
+          </li>
+        </ul>
       </div>
       <div class="background">
         <video autoplay loop muted id="live_background">
@@ -110,9 +163,6 @@
         </div>
       </div>
     </div>
-    <div class="nous_suivre" id="nous_suivre">
-
-    </div>
     <div class="footer">
       <div class="content_footer">
         <div class="logos">
@@ -142,5 +192,6 @@
     </div>
     <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="js/sirv_script.js"></script>
+    <script src="https://kit.fontawesome.com/1c6a5947b3.js" crossorigin="anonymous"></script>
   </body>
 </html>
