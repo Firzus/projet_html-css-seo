@@ -19,7 +19,7 @@
         <nav class="content_header">
           <div class="intro"><a href="#presentation">Présentation</a></div>
           <div class="news"><a href="#actualite">Actualités</a></div>
-          <div class="logo"><a href="https://genshin.mihoyo.com/fr" target="_blank"><img src="image/logo/genshin.png" style="width: 200px;"></a></div>
+          <div class="logo"><a href="https://genshin.mihoyo.com/fr" target="_blank"><img src="image/logo/genshin.png" alt="Logo Genshin Impact" style="width: 200px;"></a></div>
           <div class="download"><a href="#telecharger">Télécharger</a></div>
           <div class="more"><a href="#more">À propos</a></div>
         </nav>
@@ -34,14 +34,14 @@
           width="840" height="473"
           src="https://www.youtube.com/embed/SO__VQZirJ4"
           title="YouTube video player"
-          frameborder="0"
+          style="border: 0;"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen>
         </iframe>
       </div>
-      <div class="content" id="button" type="button">
+      <div class="content" id="button">
         <div class="button" onclick="myFunction()">
-          <img id="button_home_page" src="image/element/entry_in.jpg" onmouseover="this.src='image/element/entry_out.png'" onmouseout="this.src='image/element/entry_in.jpg'">
+          <img id="button_home_page" alt="Button Open Vidéo" src="image/element/entry_in.jpg" onmouseover="this.src='image/element/entry_out.png'" onmouseout="this.src='image/element/entry_in.jpg'">
         </div>
       </div>
     </div>
@@ -65,13 +65,13 @@
       </div>
       <div class="slideshow-container">
         <div class="mySlides1">
-          <img src="image/carousel_presentation/ayaka.jpg" style="width:100%">
+          <img src="image/carousel_presentation/ayaka.jpg" alt="Ayaka" style="width:100%">
         </div>
         <div class="mySlides1">
-          <img src="image/carousel_presentation/dvalin_venti.jpg" style="width:100%">
+          <img src="image/carousel_presentation/dvalin_venti.jpg" alt="Venti et Dvalin" style="width:100%">
         </div>
         <div class="mySlides1">
-          <img src="image/carousel_presentation/traveler.jpeg" style="width:100%">
+          <img src="image/carousel_presentation/traveler.jpeg" alt="The Traveler" style="width:100%">
         </div>
         <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
         <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
@@ -87,22 +87,22 @@
         </div>
         <div class="slideshow-container">
           <div class="mySlides2">
-            <img src="image/carousel_actualite/1.png" style="width:100%">
+            <img src="image/carousel_actualite/1.jpg" alt="First Event" style="width:100%">
           </div>
           <div class="mySlides2">
-            <img src="image/carousel_actualite/2.png" style="width:100%">
+            <img src="image/carousel_actualite/2.jpg" alt="Second Event" style="width:100%">
           </div>
           <div class="mySlides2">
-            <img src="image/carousel_actualite/3.png" style="width:100%">
+            <img src="image/carousel_actualite/3.jpg" alt="Third Event" style="width:100%">
           </div>
           <div class="mySlides2">
-            <img src="image/carousel_actualite/4.png" style="width:100%">
+            <img src="image/carousel_actualite/4.jpg" alt="Fourth Event" style="width:100%">
           </div>
           <div class="mySlides2">
-            <img src="image/carousel_actualite/5.png" style="width:100%">
+            <img src="image/carousel_actualite/5.jpg" alt="Fifth Event" style="width:100%">
           </div>
           <div class="mySlides2">
-            <img src="image/carousel_actualite/6.png" style="width:100%">
+            <img src="image/carousel_actualite/6.jpg" alt="Sixth Event" style="width:100%">
           </div>
           <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
           <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
@@ -171,7 +171,7 @@
         <li class="social_item">
           <a target="_blank" href="https://twitter.com/genshinimpactfr">
             <span class="icon_twitter">
-              <img src="image/logo/twitter.png">
+              <img src="image/logo/twitter.png" alt="icone Twitter">
             </span>
             Twitter
           </a>
@@ -212,12 +212,14 @@
     </div>
     <div class="figure" onclick="topFunction()" id="myBtn" title="Go to top">
       <img class="Sirv image-main_gototop"
-           data-src="image/go_to_top/sticker_in.png">
+           src="image/go_to_top/sticker_in.png"
+           alt="Go to top">
       <img class="Sirv image-hover_gototop"
-           data-src="image/go_to_top/sticker_out.png">
+           src="image/go_to_top/sticker_out.png"
+           alt="Go to top">
     </div>
-    <script type="text/javascript" src="js/script.js"></script>
-    <script type="text/javascript" src="js/sirv_script.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/sirv_script.js"></script>
     <script src="https://kit.fontawesome.com/1c6a5947b3.js" crossorigin="anonymous"></script>
   </body>
 </html>
