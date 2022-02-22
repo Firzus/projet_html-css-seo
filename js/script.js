@@ -1,5 +1,6 @@
-// Bouton show video
+// JS by Lilian Prieu, G.Tech 1
 
+// Bouton show video
 function myFunction() {
   var x = document.getElementById('iframe_video');
 
@@ -12,7 +13,6 @@ function myFunction() {
 }
 
 // Slideshow
-
 var slideIndex = [1,1];
 var slideId = ["mySlides1", "mySlides2"]
 showSlides(1, 0);
@@ -31,6 +31,13 @@ function showSlides(n, no) {
      x[i].style.display = "none";
   }
   x[slideIndex[no]-1].style.display = "block";
+}
+
+// Bouton show contact
+var contact_content = document.getElementById('contact_content');
+
+function showContact() {
+  contact_content.style.display = "flex";
 }
 
 // Get the button

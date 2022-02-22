@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+
+<!--HTML by Lilian Prieu, G.Tech 1 -->
 <html lang="fr" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -14,11 +16,13 @@
         <audio id="audio" loop autoplay src="audio/theme.mp3"> Your browser does not support the <code>audio</code> element.</audio>
       </div>
       <div class="header">
-        <div class="content_header">
+        <nav class="content_header">
           <div class="intro"><a href="#presentation">Présentation</a></div>
           <div class="news"><a href="#actualite">Actualités</a></div>
+          <div class="logo"><a href="https://genshin.mihoyo.com/fr" target="_blank"><img src="image/logo/genshin.png" style="width: 200px;"></a></div>
           <div class="download"><a href="#telecharger">Télécharger</a></div>
-        </div>
+          <div class="more"><a href="#more">À propos</a></div>
+        </nav>
       </div>
       <div class="background">
         <video autoplay loop muted id="live_background">
@@ -44,6 +48,20 @@
     <div class="presentation" id="presentation">
       <div class="title_presentation">
         <h1>Découvrez l'univers de Genshin Impact !</h1>
+      </div>
+      <div class="rules">
+        <div>
+          Dans un monde fantastique nommé Teyvat,
+          une sœur et un frère se retrouvent séparés
+          par une déesse inconnue. Le joueur commence
+          son aventure en tant que Voyageur ou
+          Voyageuse dont l'origine est inconnue,
+          à la recherche de l'autre. Au cours de l'aventure,
+          le joueur a la possibilité de contrôler plusieurs
+          personnages, chacun ayant une personnalité
+          unique et des capacités élémentaires
+          différentes selon le personnage.
+        </div>
       </div>
       <div class="slideshow-container">
         <div class="mySlides1">
@@ -110,7 +128,7 @@
         </div>
       </div>
     </div>
-    <div class="footer">
+    <div class="footer" id="more">
       <div class="content_footer">
         <div class="logos">
             <div class="first_part"><img src="image/logo/genshin.png" style="width: 100%;" alt="logo Genshin Impact"></div>
@@ -121,7 +139,7 @@
             <a href="https://genshin.mihoyo.com/fr/company/privacy" target="_blank">Politique de confidentialité</a>
             <a href="https://genshin.mihoyo.com/fr/company/terms" target="_blank">Accord utilisateur</a>
             <a href="https://genshin.mihoyo.com/fr/company/about" target="_blank">Qui sommes-nous ?</a>
-            <a href="mailto:genshincs_fr@mihoyo.com" target="_blank">Contact</a>
+            <a href="#contact_content" onclick="showContact()">Contact</a>
           </div>
           <div class="text">
             <div>Copyright © 2020 miHoYo All Rights Reserved</div>
@@ -130,6 +148,14 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="contact_content" id="contact_content">
+      <form>
+        <input name="name" type="text" class="feedback-input" placeholder="Name" />
+        <input name="email" type="text" class="feedback-input" placeholder="Email" />
+        <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+        <input type="submit" value="SUBMIT"/>
+      </form>
     </div>
     <div class="social">
       <p>Nous suivre</p>
