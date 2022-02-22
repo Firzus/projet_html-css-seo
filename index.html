@@ -13,65 +13,12 @@
       <div class="audio">
         <audio id="audio" loop autoplay src="audio/theme.mp3"> Your browser does not support the <code>audio</code> element.</audio>
       </div>
-      <div class="header" id="decoration_none">
-        <div class="intro"><a href="#presentation">Présentation</a></div>
-        <div class="news"><a href="#actualite">Actualités</a></div>
-        <div class="logo"><a href="#home_page"><img src="image/logo_genshin.png" id="logo_genshin"></a></div>
-        <div class="download"><a href="#telecharger">Télécharger</a></div>
-        <div class="folow_us"><a href="#nous_suivre">Nous suivre</a></div>
-      </div>
-      <div class="social" id="nous_suivre">
-        <p>Nous suivre</p>
-        <ul class="social_list">
-          <li class="social_item">
-            <a target="_blank" href="https://www.facebook.com/Genshinimpact.fr/">
-              <span class="icon_facebook">
-                <i class="fa-brands fa-facebook-f"></i>
-              </span>
-              Facebook
-            </a>
-          </li>
-          <li class="social_item">
-            <a target="_blank" href="https://twitter.com/genshinimpactfr">
-              <span class="icon_twitter">
-                <i class="fa-brands fa-twitter"></i>
-              </span>
-              Twitter
-            </a>
-          </li>
-          <li class="social_item">
-            <a target="_blank" href="https://www.youtube.com/c/GenshinImpact">
-              <span class="icon_youtube">
-                <i class="fa-brands fa-youtube"></i>
-              </span>
-              Youtube
-            </a>
-          </li>
-          <li class="social_item">
-            <a target="_blank" href="https://www.instagram.com/genshinimpact/">
-              <span class="icon_instagram">
-                <i class="fa-brands fa-instagram-square"></i>
-              </span>
-              Instagram
-            </a>
-          </li>
-          <li class="social_item">
-            <a target="_blank" href="https://www.reddit.com/r/Genshin_Impact">
-              <span class="icon_reddit">
-                <i class="fa-brands fa-reddit-alien"></i>
-              </span>
-              Reddit
-            </a>
-          </li>
-          <li class="social_item">
-            <a target="_blank" href="https://discord.com/invite/genshinimpact">
-              <span class="icon_discord">
-                <i class="fa-brands fa-discord"></i>
-              </span>
-              Discord
-            </a>
-          </li>
-        </ul>
+      <div class="header">
+        <div class="content_header">
+          <div class="intro"><a href="#presentation">Présentation</a></div>
+          <div class="news"><a href="#actualite">Actualités</a></div>
+          <div class="download"><a href="#telecharger">Télécharger</a></div>
+        </div>
       </div>
       <div class="background">
         <video autoplay loop muted id="live_background">
@@ -90,23 +37,23 @@
       </div>
       <div class="content" id="button" type="button">
         <div class="button" onclick="myFunction()">
-          <img id="button_home_page" src="image/entry_in.jpg" onmouseover="this.src='image/entry_out.png'" onmouseout="this.src='image/entry_in.jpg'">
+          <img id="button_home_page" src="image/element/entry_in.jpg" onmouseover="this.src='image/element/entry_out.png'" onmouseout="this.src='image/element/entry_in.jpg'">
         </div>
       </div>
     </div>
     <div class="presentation" id="presentation">
       <div class="title_presentation">
-        <div>Découvrez l'univers de Genshin Impact !</div>
+        <h1>Découvrez l'univers de Genshin Impact !</h1>
       </div>
       <div class="slideshow-container">
         <div class="mySlides1">
-          <img src="image/carousel_presentation_1.jpg" style="width:100%">
+          <img src="image/carousel_presentation/ayaka.jpg" style="width:100%">
         </div>
         <div class="mySlides1">
-          <img src="image/carousel_presentation_2.jpg" style="width:100%">
+          <img src="image/carousel_presentation/dvalin_venti.jpg" style="width:100%">
         </div>
         <div class="mySlides1">
-          <img src="image/carousel_presentation_3.jpeg" style="width:100%">
+          <img src="image/carousel_presentation/traveler.jpeg" style="width:100%">
         </div>
         <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
         <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
@@ -122,22 +69,22 @@
         </div>
         <div class="slideshow-container">
           <div class="mySlides2">
-            <img src="image/carousel_actualite_1.png" style="width:100%">
+            <img src="image/carousel_actualite/1.png" style="width:100%">
           </div>
           <div class="mySlides2">
-            <img src="image/carousel_actualite_2.png" style="width:100%">
+            <img src="image/carousel_actualite/2.png" style="width:100%">
           </div>
           <div class="mySlides2">
-            <img src="image/carousel_actualite_3.png" style="width:100%">
+            <img src="image/carousel_actualite/3.png" style="width:100%">
           </div>
           <div class="mySlides2">
-            <img src="image/carousel_actualite_4.png" style="width:100%">
+            <img src="image/carousel_actualite/4.png" style="width:100%">
           </div>
           <div class="mySlides2">
-            <img src="image/carousel_actualite_5.png" style="width:100%">
+            <img src="image/carousel_actualite/5.png" style="width:100%">
           </div>
           <div class="mySlides2">
-            <img src="image/carousel_actualite_6.png" style="width:100%">
+            <img src="image/carousel_actualite/6.png" style="width:100%">
           </div>
           <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
           <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
@@ -150,24 +97,24 @@
       </div>
       <div class="plateform">
         <div class="pc">
-          <a href="https://ys-api-os.mihoyo.com/event/download_porter/link/ys_global/genshinimpactpc/default" target="_blank"><img src="image/windows.png" alt="logo téléchargement PC"></a>
+          <a href="https://ys-api-os.mihoyo.com/event/download_porter/link/ys_global/genshinimpactpc/default" target="_blank"><img src="image/logo/windows.png" alt="logo téléchargement PC"></a>
         </div>
         <div class="ps4">
-          <a href="https://www.playstation.com/fr-fr/games/genshin-impact/" target="_blank"><img src="image/ps4_ps5.png" alt="logo téléchargement PS4 et PS5"></a>
+          <a href="https://www.playstation.com/fr-fr/games/genshin-impact/" target="_blank"><img src="image/logo/ps4_ps5.png" alt="logo téléchargement PS4 et PS5"></a>
         </div>
         <div class="ios">
-          <a href="https://apps.apple.com/app/id1517783697" target="_blank"><img src="image/ios.png" alt="logo téléchargement IOS"></a>
+          <a href="https://apps.apple.com/app/id1517783697" target="_blank"><img src="image/logo/ios.png" alt="logo téléchargement IOS"></a>
         </div>
         <div class="android">
-          <a href="https://play.google.com/store/apps/details?id=com.miHoYo.GenshinImpact" target="_blank"><img src="image/android.png" alt="logo téléchargement Android"></a>
+          <a href="https://play.google.com/store/apps/details?id=com.miHoYo.GenshinImpact" target="_blank"><img src="image/logo/android.png" alt="logo téléchargement Android"></a>
         </div>
       </div>
     </div>
     <div class="footer">
       <div class="content_footer">
         <div class="logos">
-            <div class="first_part"><img src="image/logo_genshin.png" style="width: 100%;" alt="logo Genshin Impact"></div>
-            <div class="second_part"><img src="image/logo_mihoyo.png" style="width: 100%;" alt="logo Genshin Impact"></div>
+            <div class="first_part"><img src="image/logo/genshin.png" style="width: 100%;" alt="logo Genshin Impact"></div>
+            <div class="second_part"><img src="image/logo/mihoyo.png" style="width: 100%;" alt="logo Genshin Impact"></div>
         </div>
         <div class="links_text">
           <div class="links">
@@ -184,11 +131,64 @@
         </div>
       </div>
     </div>
+    <div class="social">
+      <p>Nous suivre</p>
+      <ul class="social_list">
+        <li class="social_item">
+          <a target="_blank" href="https://www.facebook.com/Genshinimpact.fr/">
+            <span class="icon_facebook">
+              <img src="image/logo/facebook.png" alt="icone Facebook">
+            </span>
+            Facebook
+          </a>
+        </li>
+        <li class="social_item">
+          <a target="_blank" href="https://twitter.com/genshinimpactfr">
+            <span class="icon_twitter">
+              <img src="image/logo/twitter.png">
+            </span>
+            Twitter
+          </a>
+        </li>
+        <li class="social_item">
+          <a target="_blank" href="https://www.youtube.com/c/GenshinImpact">
+            <span class="icon_youtube">
+              <img src="image/logo/youtube.png" alt="icone Youtube">
+            </span>
+            Youtube
+          </a>
+        </li>
+        <li class="social_item">
+          <a target="_blank" href="https://www.instagram.com/genshinimpact/">
+            <span class="icon_instagram">
+              <img src="image/logo/instagram.png" alt="icone Instagram">
+            </span>
+            Instagram
+          </a>
+        </li>
+        <li class="social_item">
+          <a target="_blank" href="https://www.reddit.com/r/Genshin_Impact">
+            <span class="icon_reddit">
+              <img src="image/logo/reddit.png" alt="icone Reddit">
+            </span>
+            Reddit
+          </a>
+        </li>
+        <li class="social_item">
+          <a target="_blank" href="https://discord.com/invite/genshinimpact">
+            <span class="icon_discord">
+              <img src="image/logo/discord.png" alt="icone Discord">
+            </span>
+            Discord
+          </a>
+        </li>
+      </ul>
+    </div>
     <div class="figure" onclick="topFunction()" id="myBtn" title="Go to top">
       <img class="Sirv image-main_gototop"
-           data-src="image/sticker_in.png">
+           data-src="image/go_to_top/sticker_in.png">
       <img class="Sirv image-hover_gototop"
-           data-src="image/sticker_out.png">
+           data-src="image/go_to_top/sticker_out.png">
     </div>
     <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="js/sirv_script.js"></script>
